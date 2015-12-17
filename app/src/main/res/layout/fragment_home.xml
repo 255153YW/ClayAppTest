@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.myclay.claytest.Fragments.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:text="home" />
+    </RelativeLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:alignmentMode="alignBounds"
+        app:rowOrderPreserved="false"
+        app:useDefaultMargins="true"
+        app:columnCount="3"
+        app:rowCount="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:text="History"
+            android:id="@+id/button_menu_history"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:text="Manage Doors"
+            android:id="@+id/button_menu_doors"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:text="Manage Properties"
+            android:id="@+id/button_menu_properties"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:text="Lock All Doors"
+            android:id="@+id/button_menu_lock"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:text="Manage Users"
+            android:id="@+id/button_menu_user"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:text="Alerts"
+            android:id="@+id/button_menu_alert"/>
+    </android.support.v7.widget.GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+
+</LinearLayout>
